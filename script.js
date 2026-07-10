@@ -60,43 +60,32 @@ if (titleEl) {
   }, 3000);
 }
 
-// ===== BACKGROUND MUSIC =====
+// ===== MINECRAFT INTRO =====
 let musicPlaying = false;
 const bgMusic = document.getElementById('bg-music');
 
-function overlayPlay() {
-  const overlay = document.getElementById('music-overlay');
-  const vinyl   = document.getElementById('overlay-vinyl');
-
-  if (!bgMusic) {
-    // No audio — just close overlay
-    if (overlay) {
-      overlay.classList.add('hide');
-      setTimeout(() => overlay.style.display = 'none', 800);
-    }
-    return;
+function introPlay() {
+  if (bgMusic) {
+    bgMusic.volume = 0.4;
+    bgMusic.play().then(() => {
+      musicPlaying = true;
+      const btn = document.getElementById('music-btn');
+      const label = document.getElementById('music-label');
+      if (btn) btn.classList.add('playing');
+      if (label) label.textContent = '♪ Hold me down';
+    }).catch(() => {});
   }
-
-  bgMusic.volume = 0.4;
-  bgMusic.play().then(() => {
-    musicPlaying = true;
-    if (vinyl) vinyl.style.animationPlayState = 'running';
-    if (overlay) {
-      overlay.classList.add('hide');
-      setTimeout(() => overlay.style.display = 'none', 800);
-    }
-    const btn = document.getElementById('music-btn');
-    const label = document.getElementById('music-label');
-    if (btn) btn.classList.add('playing');
-    if (label) label.textContent = '♪ Hold me down';
-  }).catch(() => {
-    // Still close overlay even if audio fails
-    if (overlay) {
-      overlay.classList.add('hide');
-      setTimeout(() => overlay.style.display = 'none', 800);
-    }
-  });
+  introClose();
 }
+
+function introClose() {
+  const intro = document.getElementById('mc-intro');
+  if (!intro) return;
+  intro.classList.add('hide');
+  setTimeout(() => intro.style.display = 'none', 800);
+}
+
+function overlayPlay() { introPlay(); }
 
 function toggleMusic() {
   const btn   = document.getElementById('music-btn');
