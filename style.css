@@ -1273,3 +1273,34 @@ footer       { background: rgba(10, 10, 10, 0.92) !important; }
   transform: scale(1.05);
   filter: brightness(1);
 }
+
+/* ===== CONTACT CENTER ===== */
+.contact-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.contact-center .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 1.4rem;
+  font-family: 'VT323', monospace;
+  letter-spacing: 2px;
+}
+
+.contact-center .contact-item i {
+  font-size: 1.6rem;
+}
+
+.contact-center .contact-item a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-center .contact-item a:hover {
+  color: var(--mc-green);
+}
