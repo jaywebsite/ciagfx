@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cia GFX</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Floating elements removed -->
+  <img src="mc.png.jpg" class="float-chicken" alt="" />
+  <img src="cat.jpg" class="float-cat" alt="" />
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Cia GFX<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#commissions">Commissions</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p class="greeting">Hello, <span class="red">I am</span></p>
+      <h1 class="name">Cia GFX</h1>
+      <h2 class="title-text">est. <span class="red">2026</span></h2>
+      <p class="bio">Graphic Designer | E-Sports, Academics, Business</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/people/cia-gfx/61572043596306/" target="_blank" title="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+      <a href="#about" class="btn">Know More</a>
+    </div>
+    <div class="hero-image">
+      <div class="img-wrapper">
+        <img src="profile.jpg.png" alt="Cia GFX" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="section" id="about">
+    <h2 class="section-title">About <span class="red">Me</span></h2>
+    <div class="about-container">
+      <div class="about-img">
+        <div class="img-wrapper small">
+          <img src="profile.jpg.png" alt="Cia GFX" />
+        </div>
+      </div>
+      <div class="about-text">
+        <h3>Hi, I'm <span class="red">Cia GFX</span></h3>
+        <p>Graphic Designer focused on E-Sports, Academics, and Business branding. Est. 2026.</p>
+        <div class="info-grid">
+          <div><span class="label">Name:</span> Cia GFX</div>
+          <div><span class="label">Est:</span> 2026</div>
+          <div><span class="label">Instagram:</span> <a href="https://www.facebook.com/people/cia-gfx/61572043596306/" target="_blank" class="red">Cia GFX</a></div>
+          <div><span class="label">Field:</span> Graphic Design</div>
+        </div>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="section dark-section" id="services">
+    <h2 class="section-title">My <span class="red">Services</span></h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-gamepad"></i>
+        <h3>E-Sports Design</h3>
+        <p>Team logos, jerseys, overlays, and branding for competitive gaming.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>Academic Design</h3>
+        <p>Infographics, presentations, and visual materials for school projects.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-briefcase"></i>
+        <h3>Business Branding</h3>
+        <p>Logos, social media kits, and brand identity for businesses.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-paint-brush"></i>
+        <h3>Graphic Design</h3>
+        <p>Posters, banners, thumbnails, and creative visual content.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section class="section" id="portfolio">
+    <h2 class="section-title">My <span class="red">Portfolio</span></h2>
+    <div class="portfolio-grid">
+
+      <!-- E-CERT SECTION -->
+      <div class="portfolio-full-row">
+        <h3 class="portfolio-sub-title">E-<span class="red">Certs</span></h3>
+        <div class="ecert-grid">
+          <div class="ecert-card" onclick="openImg('ecert1.png')">
+            <img src="ecert1.png" alt="E-Cert 1" />
+          </div>
+          <div class="ecert-card" onclick="openImg('ecert2.png')">
+            <img src="ecert2.png" alt="E-Cert 2" />
+          </div>
+          <div class="ecert-card" onclick="openImg('ecert3.png')">
+            <img src="ecert3.png" alt="E-Cert 3" />
+          </div>
+          <div class="ecert-card" onclick="openImg('ecert4.png')">
+            <img src="ecert4.png" alt="E-Cert 4" />
+          </div>
+          <div class="ecert-card" onclick="openImg('ecert5.png')">
+            <img src="ecert5.png" alt="E-Cert 5" />
+          </div>
+        </div>
+      </div>
+
+      <!-- COVER PHOTO SECTION -->
+      <div class="portfolio-full-row">
+        <h3 class="portfolio-sub-title">Cover <span class="red">Photos</span></h3>
+        <div class="ecert-grid">
+          <div class="ecert-card" onclick="openImg('cover1.png')">
+            <img src="cover1.png" alt="Cover 1" />
+          </div>
+          <div class="ecert-card" onclick="openImg('cover2.png')">
+            <img src="cover2.png" alt="Cover 2" />
+          </div>
+          <div class="ecert-card" onclick="openImg('cover3.png')">
+            <img src="cover3.png" alt="Cover 3" />
+          </div>
+          <div class="ecert-card" onclick="openImg('cover4.png')">
+            <img src="cover4.png" alt="Cover 4" />
+          </div>
+        </div>
+      </div>
+
+      <!-- GC COVER PHOTO SECTION -->
+      <div class="portfolio-full-row">
+        <h3 class="portfolio-sub-title">GC <span class="red">Covers</span></h3>
+        <div class="ecert-grid">
+          <div class="ecert-card" onclick="openImg('gc1.png')">
+            <img src="gc1.png" alt="GC Cover 1" />
+          </div>
+          <div class="ecert-card" onclick="openImg('gc2.png')">
+            <img src="gc2.png" alt="GC Cover 2" />
+          </div>
+          <div class="ecert-card" onclick="openImg('gc3.png')">
+            <img src="gc3.png" alt="GC Cover 3" />
+          </div>
+          <div class="ecert-card" onclick="openImg('gc4.png')">
+            <img src="gc4.png" alt="GC Cover 4" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Placeholder cards -->
+      <div class="portfolio-card">
+        <div class="portfolio-img"><i class="fas fa-mobile-alt"></i></div>
+        <div class="portfolio-info">
+          <h3>Coming Soon</h3>
+          <p>More projects on the way.</p>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-img"><i class="fas fa-palette"></i></div>
+        <div class="portfolio-info">
+          <h3>Coming Soon</h3>
+          <p>More projects on the way.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMMISSIONS SECTION -->
+  <section class="section dark-section" id="commissions">
+    <h2 class="section-title">Open For <span class="red">Commissions</span></h2>
+    <p class="comm-sub">& Partnerships</p>
+
+    <div class="comm-status">
+      <span class="status-dot"></span> OPEN FOR COMMISSIONS
+    </div>
+
+    <div class="comm-gallery">
+      <div class="comm-card" onclick="openImg('commission1.jpg')">
+        <img src="commission1.jpg" alt="Terms and Conditions" />
+        <div class="comm-label">Terms & Conditions</div>
+      </div>
+      <div class="comm-card" onclick="openImg('commission2.jpg')">
+        <img src="commission2.jpg" alt="Price List" />
+        <div class="comm-label">Price List</div>
+      </div>
+      <div class="comm-card" onclick="openImg('commission3.jpg')">
+        <img src="commission3.jpg" alt="Packages" />
+        <div class="comm-label">Packages</div>
+      </div>
+      <div class="comm-card" onclick="openImg('commission4.jpg')">
+        <img src="commission4.jpg" alt="More Info" />
+        <div class="comm-label">More Info</div>
+      </div>
+      <div class="comm-card" onclick="openImg('commission5.jpg')">
+        <img src="commission5.jpg" alt="Full Rates" />
+        <div class="comm-label">Full Rates</div>
+      </div>
+    </div>
+
+    <div class="comm-cta">
+      <a href="https://www.facebook.com/people/cia-gfx/61572043596306/" target="_blank" class="btn">
+        <i class="fab fa-facebook-f"></i> Message to Order
+      </a>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="" />
+    <span id="lb-close">✕</span>
+  </div>
+  <section class="section dark-section" id="contact">
+    <h2 class="section-title">Contact <span class="red">Me</span></h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fab fa-facebook-f red"></i>
+          <a href="https://www.facebook.com/people/cia-gfx/61572043596306/" target="_blank">Cia GFX</a>
+        </div>
+      </div>
+      <form class="contact-form" action="https://formspree.io/f/xykqrdze" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 <span class="red">Cia GFX</span>. All Rights Reserved.</p>
+  </footer>
+
+  <!-- BACKGROUND MUSIC PLAYER -->
+  <div id="music-player">
+    <button id="music-btn" onclick="toggleMusic()" title="Toggle Music">
+      <i class="fas fa-music" id="music-icon"></i>
+    </button>
+    <span id="music-label">♪ Hold me down</span>
+  </div>
+
+  <!-- HTML5 Audio -->
+  <audio id="bg-music" loop preload="auto">
+    <source src="musicc.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- FULLSCREEN MUSIC OVERLAY -->
+  <div id="music-overlay">
+    <div id="overlay-bg"></div>
+    <div id="overlay-content">
+      <div id="overlay-vinyl">
+        <i class="fas fa-record-vinyl"></i>
+      </div>
+      <h2 id="overlay-title">Daniel Caesar</h2>
+      <p id="overlay-song">— Hold me down —</p>
+      <button id="overlay-btn" onclick="overlayPlay()">
+        <i class="fas fa-play"></i> Enter Site
+      </button>
+      <span id="overlay-hint">Click to play music &amp; enter</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
